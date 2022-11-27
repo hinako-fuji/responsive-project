@@ -1,0 +1,126 @@
+:root {
+  --primary-color: #72c3bd;
+  --secondary-color: #f5f2fe;
+  --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+body {
+  color: #44383c;
+}
+
+.navbar-brand {
+  color: var(--primary-color);
+}
+
+.navbar-brand:hover {
+  color: var(--primary-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: #44383c;
+}
+
+.hero {
+  background-image: url(/images/puppy-hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  height: 770px;
+  padding: 0 10px;
+}
+
+.hero-heading {
+  padding-top: 130px;
+}
+
+.hero a {
+  margin-top: 25px;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 96px;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+.btn-branding {
+  background: var(--primary-color);
+  color: white;
+  font-size: 18px;
+  padding: 20px 30px;
+  border-radius: 4px;
+  line-height: 1;
+}
+
+.btn-branding:hover {
+  background: var(--primary-color);
+  color: white;
+}
+
+.btn-secondary {
+  background: transparent;
+  border: 2px solid #c3a07a;
+  font-size: 18px;
+  padding: 20px 30px;
+  border-radius: 4px;
+  line-height: 1;
+  color: #44383c;
+}
+
+.featured-heading {
+  padding: 40px 10px 40px;
+}
+
+.footer {
+  margin: 50px 0 0;
+  padding: 70px;
+  background: #ededed;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    height: 650px;
+  }
+  .hero-heading {
+    padding-top: 100px;
+  }
+  h1 {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    height: 450px;
+  }
+  .hero-heading {
+    padding-top: 90px;
+  }
+  .hero a {
+    margin-top: 15px;
+  }
+  h1 {
+    font-size: 34px;
+  }
+  h2,
+  h3 {
+    font-size: 18px;
+  }
+
+  .btn-branding {
+    padding: 15px 20px;
+  }
+  .featured {
+    padding: 10px 40px;
+  }
+}
