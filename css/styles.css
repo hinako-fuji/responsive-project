@@ -23,11 +23,15 @@ body {
 }
 
 .navbar-nav .nav-link.active {
-  color: #44383c;
+  color: var(--primary-color);
 }
 
 .a nav-link {
   color: #44383cc3;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
 }
 
 .hero {
@@ -36,11 +40,7 @@ body {
   background-position: center;
   background-size: cover;
   text-align: center;
-  padding: 15px 0 380px;
-}
-
-.hero-heading {
-  padding-top: 130px;
+  padding: 125px 0 380px;
 }
 
 .hero a {
@@ -56,7 +56,7 @@ p {
 
 h1 {
   font-family: var(--heading-font);
-  font-size: 66px;
+  font-size: 64px;
 }
 
 .hero h1 {
@@ -74,6 +74,11 @@ h4 {
   font-family: var(--heading-font);
   font-weight: 700;
   line-height: 1;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .btn-branding {
@@ -128,7 +133,7 @@ h4 {
   padding: 0 0 24px 0;
 }
 
-.gallery-heading {
+.page-heading {
   padding: 110px 0 40px;
 }
 
@@ -150,13 +155,16 @@ h4 {
   margin: 0 0 30px;
 }
 
-p {
+.contact-form {
+  padding: 0 30px 0 0;
+}
+
+.form-label {
   font-size: 18px;
-  line-height: 1.7;
 }
 
 .footer {
-  margin: 100px 0;
+  margin: 110px 0;
 }
 
 .footer .contact-box {
@@ -196,13 +204,19 @@ p {
   background: var(--primary-color);
 }
 
+.footer small {
+  font-size: 16px;
+}
+
+.footer small a {
+  color: var(--primary-color);
+}
+
 @media (max-width: 1000px) {
   .hero h1 {
     font-size: 66px;
   }
-  .hero-heading {
-    padding-top: 100px;
-  }
+
   .footer .contact-box {
     padding: 30px 60px;
   }
@@ -218,6 +232,15 @@ p {
     margin: 30px 0 0;
     padding: 0;
   }
+
+  .contact-pup {
+    text-align: center;
+    margin: 30px 0 0;
+  }
+  .contact-form {
+    padding: 0 20px 30px 20px;
+  }
+
   .footer {
     margin: 80px 0;
   }
@@ -225,7 +248,7 @@ p {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 15px 0 300px;
+    padding: 115px 0 300px;
   }
 
   .hero a {
@@ -249,14 +272,22 @@ p {
     padding: 40px 0;
   }
 
-  .gallery-heading .footer .contact-box {
+  .page-heading {
+    padding: 95px 0 25px;
+  }
+
+  .footer {
+    margin: 60px 0;
+  }
+
+  .footer .contact-box {
     padding: 30px 40px;
   }
 }
 
 @media (max-width: 576px) {
   .hero {
-    padding: 15px 0 240px;
+    padding: 110px 0 240px;
   }
 
   .hero h1 {
@@ -265,11 +296,6 @@ p {
 
   h1 {
     font-size: 44px;
-  }
-
-  .hero-heading {
-    padding-top: 60px;
-    margin-top: 30px;
   }
 
   .hero h2,
@@ -304,7 +330,7 @@ p {
 
 @media (max-width: 320px) {
   .hero {
-    padding: 15px 0 180px;
+    padding: 100px 0 180px;
   }
   .hero h1 {
     font-size: 34px;
