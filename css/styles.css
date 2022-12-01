@@ -92,25 +92,9 @@ p {
 }
 
 .btn-branding:hover {
-  background: var(--primary-color);
-  color: white;
-}
-
-.btn-bordered {
   background: transparent;
   border: 2px solid var(--primary-color);
-  font-size: 18px;
-  font-weight: 500;
-  padding: 20px 30px;
-  border-radius: 4px;
-  line-height: 1;
   color: var(--primary-color);
-}
-
-.btn-bordered:hover {
-  background: transparent;
-  color: var(--primary-color);
-  border: 2px solid var(--primary-color);
 }
 
 .btn-check:checked + .btn,
@@ -138,7 +122,7 @@ p {
 }
 
 .about-section {
-  padding: 150px 0 0;
+  padding: 150px 0 25px;
 }
 
 .about-section h2 {
@@ -164,7 +148,7 @@ p {
 }
 
 .footer {
-  margin: 110px 0;
+  margin: 100px 0 50px;
 }
 
 .footer .contact-box {
@@ -241,10 +225,6 @@ p {
   .contact-form {
     padding: 0 20px 30px 20px;
   }
-
-  .footer {
-    margin: 80px 0;
-  }
 }
 
 @media (max-width: 768px) {
@@ -278,7 +258,7 @@ p {
   }
 
   .footer {
-    margin: 60px 0;
+    margin: 50px 0;
   }
 
   .footer .contact-box {
