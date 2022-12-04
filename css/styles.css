@@ -62,7 +62,7 @@ h1 {
 
 .hero h2 {
   font-size: 24px;
-  line-height: 2;
+  line-height: 3;
   font-weight: 500;
 }
 
@@ -231,7 +231,7 @@ p {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 115px 0 80px;
+    padding: 115px 0 70px;
   }
 
   .hero a {
@@ -274,7 +274,7 @@ p {
 
 @media (max-width: 576px) {
   .hero {
-    padding: 110px 0 70px;
+    padding: 110px 0 60px;
   }
 
   .hero h1 {
