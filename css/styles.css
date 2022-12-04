@@ -35,16 +35,9 @@ body {
 }
 
 .hero {
-  background-image: url(/images/hero.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   text-align: center;
-  padding: 155px 0 500px;
-}
-
-.hero-heading {
-  margin: 10px 0 0;
+  padding: 135px 0 80px;
+  background: var(--secondary-color);
 }
 
 .hero a {
@@ -199,12 +192,6 @@ p {
   color: var(--primary-color);
 }
 
-@media (max-width: 1320px) {
-  .hero {
-    padding: 125px 0 380px;
-  }
-}
-
 @media (max-width: 992px) {
   .hero h1 {
     font-size: 66px;
@@ -244,7 +231,7 @@ p {
 
 @media (max-width: 768px) {
   .hero {
-    padding: 115px 0 300px;
+    padding: 115px 0 80px;
   }
 
   .hero a {
@@ -287,7 +274,7 @@ p {
 
 @media (max-width: 576px) {
   .hero {
-    padding: 110px 0 240px;
+    padding: 110px 0 70px;
   }
 
   .hero h1 {
@@ -347,7 +334,7 @@ p {
 
 @media (max-width: 320px) {
   .hero {
-    padding: 100px 0 180px;
+    padding: 100px 0 50px;
   }
 
   .hero h1 {
