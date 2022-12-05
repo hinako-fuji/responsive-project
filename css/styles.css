@@ -1,6 +1,6 @@
 :root {
   --primary-color: #72c3bd;
-  --secondary-color: #f8f9fa;
+  --secondary-color: #f5f9f9;
   --box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
   --heading-font: "Quattrocento", serif;
   --defaul-font: "Maven Pro", sans-serif;
@@ -9,6 +9,14 @@
 body {
   color: #44383c;
   font-family: var(--defaul-font);
+}
+
+img {
+  border-radius: 4px;
+}
+
+.navbar {
+  background-color: var(--secondary-color);
 }
 
 .navbar-brand,
@@ -34,22 +42,17 @@ body {
   color: var(--primary-color);
 }
 
-.hero {
-  background-image: url(/images/hero.jpg);
-  background-size: cover;
-  height: 100vh;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .hero-heading {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: auto;
-  height: 65vh;
-  text-align: center;
+  margin: 140px 0 0;
+}
+
+.hero-image {
+  max-width: 70%;
+  margin-top: -30px;
 }
 
 .hero a {
@@ -123,7 +126,7 @@ p {
 }
 
 .featured {
-  padding: 0 0 24px 0;
+  margin-bottom: 24px;
 }
 
 .page-heading {
@@ -132,6 +135,7 @@ p {
 
 .about-section {
   padding: 150px 0 25px;
+  border-radius: 4px;
 }
 
 .about-section h2 {
@@ -204,28 +208,7 @@ p {
   color: var(--primary-color);
 }
 
-@media (max-width: 1200px) {
-  .hero h1 {
-    font-size: 66px;
-  }
-
-  .hero {
-    height: 80vh;
-  }
-
-  .hero-heading {
-    height: 60vh;
-  }
-}
-
 @media (max-width: 992px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-heading {
-    height: 45vh;
-  }
   .hero h1 {
     font-size: 66px;
   }
@@ -245,7 +228,6 @@ p {
   }
 
   .contact-pup {
-    text-align: center;
     margin: 30px 0;
   }
 
@@ -263,6 +245,12 @@ p {
 }
 
 @media (max-width: 768px) {
+  .hero-heading {
+    margin: 110px 0 0;
+  }
+  .hero-image {
+    max-width: 80%;
+  }
   .hero a {
     margin-top: 15px;
   }
@@ -272,7 +260,7 @@ p {
   }
 
   .featured {
-    padding: 0 0 20px 0;
+    margin-bottom: 20px;
   }
 
   h1 {
@@ -285,7 +273,7 @@ p {
   }
 
   .page-heading {
-    padding: 95px 0 25px;
+    padding: 100px 0 25px;
   }
 
   .footer {
@@ -302,8 +290,12 @@ p {
 }
 
 @media (max-width: 576px) {
+  .hero-image {
+    max-width: 100%;
+    margin-top: -10px;
+  }
   .hero h1 {
-    font-size: 44px;
+    font-size: 50px;
   }
 
   h1 {
@@ -322,13 +314,15 @@ p {
     padding: 15px 15px;
   }
 
+  .featured-section,
+  .gallery-section,
+  .contact-pup {
+    padding: 0 20px;
+  }
+
   .featured-heading {
     padding: 30px 0;
     font-size: 20px;
-  }
-
-  .featured {
-    padding: 0 20px 20px;
   }
 
   .about-section p {
@@ -343,12 +337,9 @@ p {
     margin: 20px 0;
   }
 
-  .contact-pup img {
-    padding: 0 20px;
-  }
-
   .footer {
     margin: 50px 0 30px;
+    padding: 0 20px;
   }
 
   .footer .contact-box {
@@ -358,13 +349,6 @@ p {
 }
 
 @media (max-width: 320px) {
-  .hero {
-    height: 70vh;
-  }
-
-  .hero-heading {
-    height: 55vh;
-  }
   .hero h1 {
     font-size: 34px;
   }
