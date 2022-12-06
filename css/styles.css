@@ -242,6 +242,11 @@ p {
   .footer .contact-box {
     padding: 30px 60px;
   }
+
+  .btn-branding:hover {
+    background: var(--primary-color);
+    color: white;
+  }
 }
 
 @media (max-width: 768px) {
